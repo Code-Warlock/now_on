@@ -1,0 +1,390 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Now-On - Security Services | {{title}}
+{% endblock title %}
+{% block styles %}
+    {% include 'main_app/includes/links.html' %}
+    
+{% endblock styles %}
+{% block pre-load-scripts %}
+    {% include 'main_app/includes/scripts.html' %}
+{% endblock pre-load-scripts %}
+{% block content %}
+<div id="__next">
+    {% include 'header.html' %}
+    {% comment %} <section class="banner-area banner-item-bg-1 jarallax">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-9">
+            <div class="banner-text">
+              <span
+                >The Security Agency you need.</span
+              >
+              <h1>NOW-ON SECURITY SERVICES AGENCY</h1>
+              <p>
+                Providing Satisfaction to our clients when providing trusted security services
+              </p>
+              <div class="banner-btn">
+                <a class="default-btn" href="{% url 'contact' %}"
+                  >Booking Now</a
+                ><a class="default-btn active" href="{% url 'about' %}"
+                  >About Us</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="video-btn-animat one">
+              <div class="video-btn popup-youtube">
+                <i class="bx bx-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% include 'main_app/includes/three_main_services.html' %}
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </section> {% endcomment %}
+    {% comment %} <div class="banner-area banner-area-two">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="banner-text">
+                  <span
+                    >The Security Agency you need.</span
+                  >
+                  <h1>NOW-ON SECURITY SERVICES AGENCY</h1>
+                  <p>
+                    Providing Satisfaction to our clients when providing trusted security services
+                  </p>
+                  <div class="banner-btn">
+                    <a class="default-btn" href="../contact/index.html"
+                      >Booking Now</a
+                    ><a class="default-btn active" href="../about/index.html"
+                      >About Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-site-img" style="background-color:#0003;">
+                  <img
+                    src="{% static 'images/security-guard-protecting-client.jpg' %}"
+                    alt="Image" style="object-fit:cover;mix-blend-mode:screen;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> {% endcomment %}
+    <div class="banner-area banner-area-three jarallax">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="banner-text">
+              <span
+                >The Security Agency you need.</span
+              >
+              <h1>NOW-ON SECURITY SERVICES LIMITED</h1>
+              <p>
+               We are here to strategically reduce the rate of crime on establishment at a time and create a safer, healthier and more secure environment to live in.
+              </p>
+              <div class="banner-btn">
+                <a class="default-btn" href="{% url 'contact' %}">Booking Now</a
+                ><a class="default-btn active" href="{% url 'about' %}"
+                  >About Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="follow-us">
+        <ul>
+          <li><span>Follow Us On Social Media</span></li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="banner-shape-1">
+        <img src="{% static 'images/home3-shape1.png' %}" alt="Image" />
+      </div>
+      <div class="banner-shape-2">
+        <img src="{% static 'images/home3-shape2.png' %}" alt="Image" />
+      </div>
+      <div class="banner-shape-3">
+        <img src="{% static 'images/home3-shape3.png' %}" alt="Image" />
+      </div>
+    </div>
+    <div class="partner-area ptb-100"><div class="container"></div></div>
+    <section class="security-area pb-70">
+      <div class="container">
+        <div class="section-title">
+          <h2>Complete and Overall Security</h2>
+          <p>
+            We provide a large team of security guards of the highest standard to meet all clients' needs.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-security">
+              <i class="flaticon-bug"></i>
+              <h3>Electronic Technology and ICT Security System Integration</h3>
+              <p>
+                NOW-ON offers specialists in High Definition surveillance systems, access control system &amp; intrusion
+                alarm systems. We offer expert advice on impproving already existing security system security solutions that suits the clients' needs &amp; budget.
+                
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-security">
+              <i class="flaticon-profile"></i>
+              <h3>Security Training &amp;Consulting Services</h3>
+              <p>
+                NOW-ON capabilities dominate security training and expert consulting services on how to 
+                maximize security and effectively minimize crime. We offer security tips and follow-through training to 
+                an organization's already present security officers.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-security">
+              <i class="flaticon-support"></i>
+              <h3>24/7 Security Support</h3>
+              <p>
+                We operate 24/7 and are always available to dispatch your security requirements on short notice.
+                Nigeria's most trusted security company security guards 24/7 for your next event.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-security">
+              <i class="flaticon-profile"></i>
+              <h3>Reliability</h3>
+              <p>
+                Now-On Security Services has a proven track record in providing reliable, affordable, and competent security services that will not send your security guard hire costs through the roof.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include 'main_app/includes/approach.html' %}
+    <section class="solutions-area pb-70">
+      <div class="container">
+        <div class="section-title">
+          <h2>High-Performance Solutions</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus quam neque quibusdam corrupti aspernatur corporis alias
+            nisi dolorum expedita veritatis voluptates minima.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="single-solutions solutions-time-bg-1">
+              <div class="solutions-content">
+                <h3>Secure Managed IT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolorer
+                </p>
+                <a class="read-more" href="service-details/index.html"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-solutions solutions-time-bg-2">
+                  <div class="solutions-content">
+                    <h3>Compliance Testing</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet sed, consectetur adipiscing
+                      elit do
+                    </p>
+                    <a class="read-more" href="service-details/index.html"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="single-solutions solutions-time-bg-3">
+                  <div class="solutions-content">
+                    <h3>Training</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet sed, consectetur adipiscing
+                      elit do
+                    </p>
+                    <a class="read-more" href="service-details/index.html"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include 'main_app/includes/mini_about.html' %}
+    
+    <section class="cybersecurity-area ptb-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="cybersecurity-content">
+              <h2>24/7 Electronic Technology and ICT in Integrated Security Systems</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Quis ipsum suspendisse.
+              </p>
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <ul class="cybersecurity-item">
+                    <li>
+                      <i class="bx bx-check"></i>CCTV Systems
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Security Alarms
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Fire safety Gadgets
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Computer Integration
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Electronic Locks
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                  <ul>
+                    <li>
+                      <i class="bx bx-check"></i>Electronic Doors
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Access Control System
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Fire Control Alarms System
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Electronic Safes
+                    </li>
+                    <li>
+                      <i class="bx bx-check"></i>Maintenance and regular system upgrades
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pr-0">
+            <div class="cybersecurity-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% comment %} <section class="blog-area pb-70"> 
+      <div class="container">
+        <div class="section-title">
+          <h2>Latest News From Blog</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus quam neque quibusdam corrupti aspernatur corporis alias
+            nisi dolorum expedita veritatis voluptates minima.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-blog">
+              <img src="{% static 'img/blog/blog1.jpg' %}" alt="Image" />
+              <div class="blog-content">
+                <h3>
+                  <a href="blog-details/index.html">Secure Managed IT</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolorer
+                </p>
+                <a class="read-more" href="blog-details/index.html"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="single-blog">
+              <img src="{% static 'img/blog/blog2.jpg' %}" alt="Image" />
+              <div class="blog-content">
+                <h3><a href="blog-details/index.html">Cloud Security</a></h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolorer
+                </p>
+                <a class="read-more" href="blog-details/index.html"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+            <div class="single-blog">
+              <img src="{% static 'img/blog/blog3.jpg' %}" alt="Image" />
+              <div class="blog-content">
+                <h3>
+                  <a href="blog-details/index.html">Secure Managed Web</a>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolorer
+                </p>
+                <a class="read-more" href="blog-details/index.html"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> {% endcomment %}
+  
+    <div class="scroll-to-top"></div>
+  </div>
+  {% include 'footer.html' %}
+{% endblock content %}
+{% block scripts %}
+        <script>
+
+        </script>
+{% endblock scripts %}

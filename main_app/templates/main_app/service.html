@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}
+        Now-On - Security Services | {{title}}
+    {% endblock title %}
+    {% block styles %}
+        {% include 'main_app/includes/links.html' %}
+    {% endblock styles %}
+    {% block pre-load-scripts %}
+        {% include 'main_app/includes/scripts.html' %}
+    {% endblock pre-load-scripts %}
+    {% block content %}
+    <div id="__next">
+        {% include 'header.html' %}
+        {% include 'main_app/includes/landing_crumb.html' %}
+
+  <section class="blog-details-area ptb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-12">
+          <div class="blog-details-desc">
+            <div class="article-content">
+              <h3>
+                {{service.title}}
+              </h3>
+              <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+              <div class="article-image">
+                <img
+                  src="{% static 'images/'|add:thumbnail %}"
+                  alt="image"
+                />
+              </div>
+              <p>
+                Quuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam dolor sit, consectetur
+                qui ratione voluptatem sequi.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in sed quia non
+                numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat labore et dolore magna aliqua.
+              </p>
+              <blockquote class="flaticon-quote">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus aliquid praesentium eveniet illum asperiores,
+                  quidem, ipsum voluptatum numquam ducimus nisi
+                  exercitationem dolorum facilis Repellendus aliquid
+                  praesentium eveniet illum asperiores.
+                </p>
+              </blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in sed quia non
+                numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat
+                consectetur adipisicing Lorem ipsum dolor sit amet numquam.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in sed quia non
+                numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat ullamco laboris nisi ut aliquip ex
+                ea.
+              </p>
+            </div>
+            {% comment %} <div class="article-footer">
+              <div class="article-tags">
+                <span><i class="bx bx-share-alt"></i></span
+                ><a href="#">Share</a>
+              </div>
+              <div class="article-share">
+                <ul class="social">
+                  <li>
+                    <a href="https://facebook.com/" target="_blank"
+                      ><i class="bx bxl-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank"
+                      ><i class="bx bxl-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/" target="_blank"
+                      ><i class="bx bxl-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://pinterest.com/" target="_blank"
+                      ><i class="bx bxl-pinterest-alt"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div> {% endcomment %}
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="blog-right-sidebar sidebar-pl-15">
+            <aside class="widget-area" id="secondary">
+              <div class="widget widget-peru-posts-thumb">
+                <h3 class="widget-title">Other Services</h3>
+                <div class="post-wrap">
+                {% for service in services  %}
+                  <div class="item">
+                    <a class="thumb" href="{% url 'services-detail' service.slug %}"
+                      ><span class="fullimage cover bg1" role="img" style="background-image:url({% static 'images/services/'|add:service.image %})"></span
+                    ></a>
+                    <div class="info">
+                      <h5 class="title usmall">
+                        <a href="{% url 'services-detail' service.slug %}"
+                          >{{service.title}}</a
+                        >
+                      </h4>
+                      <a href="{% url 'services-detail' service.slug %}" style="color:black"> 
+                        <i>{% lorem 5 w random %}</i>
+                      </a>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                 {% endfor %}
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% include 'footer.html' %}
+{% endblock content %}

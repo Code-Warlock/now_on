@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}
+        Now-On - Security Services | {{title}}
+    {% endblock title %}
+    {% block styles %}
+        {% include 'main_app/includes/links.html' %}
+    {% endblock styles %}
+    {% block pre-load-scripts %}
+        {% include 'main_app/includes/scripts.html' %}
+    {% endblock pre-load-scripts %}
+    {% block content %}
+    <div id="__next">
+        {% include 'header.html' %}
+        {% include 'main_app/includes/landing_crumb.html' %}
+        {% include 'main_app/includes/mini_about.html' %}
+        <div class="pt-100">
+          {% include 'main_app/includes/approach.html' %}
+        </div>
+    </div>
+        {% include 'footer.html' %}
+    {% endblock content %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Now-On - Security Services | {{title}}
+{% endblock title %}
+{% block styles %}
+    {% include 'main_app/includes/links.html' %}
+{% endblock styles %}
+{% block pre-load-scripts %}
+    {% include 'main_app/includes/scripts.html' %}
+{% endblock pre-load-scripts %}
+{% block content %}
+<div id="__next">
+    {% include 'header.html' %}
+    {% include 'main_app/includes/landing_crumb.html' %}
+    <div class="container pt-4 ">
+      <div class="section-title py-4 pt-4">
+        <h2>Now-ON Gallery</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Doloribus quam neque quibusdam corrupti aspernatur corporis alias
+          nisi dolorum expedita veritatis voluptates minima.
+        </p>
+      </div>
+    <div class="row">
+        <div class="col-lg-4 col-sm-6">
+          <div class="single-blog">
+            <img src="{% static 'images/trained_guards.jpg' %}" alt="Image" />
+            <div class="blog-content">
+              <h3>
+                <a href="blog-details/index.html">Training Grounds</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolorer
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="single-blog">
+            <img src="{% static 'images/trained_guards.jpg' %}" alt="Image" />
+            <div class="blog-content">
+              <h3><a href="blog-details/index.html">Training Grounds</a></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolorer
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
+          <div class="single-blog">
+            <img src="{% static 'images/trained_guards.jpg' %}" alt="Image" />
+            <div class="blog-content">
+              <h3>
+                <a href="blog-details/index.html">Training Grounds</a>
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolorer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% include 'footer.html' %}
+{% endblock content %}

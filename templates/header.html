@@ -1,0 +1,111 @@
+{% load static %}
+<header class="header-area fixed-top">
+  <div class="top-header-area">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-sm-8">
+          <ul class="header-content-left">
+            <li>
+              <a href="mailto:test@example.com"
+                ><i class="bx bx-envelope"></i>Email:
+                <span>mail@now-on.com</span>
+              </a>
+            </li>
+            <li>
+              <i class="bx bx-location-plus"></i>Sagamu-Abeokuta Express Road,
+              Ogun State.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-4">
+          <ul class="header-content-right">
+            <li>
+              <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav-area">
+    <div id="navbar" class="navbar-area">
+      <div class="main-nav">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="{% url 'index' %}"
+              ><img
+                src="{% static 'images/now_on_new2.jpg' %}"
+                style="
+                  width: 150px;
+                  height: 150px;
+                  object-fit: cover;
+                  object-position: top;
+                "
+                alt="logo" /></a
+            ><button
+              class="navbar-toggler navbar-toggler-right collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar top-bar"></span
+              ><span class="icon-bar middle-bar"></span
+              ><span class="icon-bar bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">About<i class="bx bx-chevron-down"></i></a>
+                  
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about-more' 'team' %}">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about-more' 'faq' %}">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about-more' 'testimonials' %}">Testimonials</a>
+                    </li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'services' %}">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+                </li>
+              </ul>
+            </div>
+            <div class="others-option">
+              <div class="get-quote">
+                <a class="default-btn" href="{% url 'contact' %}"
+                  >Get A Quote</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

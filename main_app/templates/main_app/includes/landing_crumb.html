@@ -1,0 +1,16 @@
+<div class="page-title-area bg-22">
+    <div class="container">
+      <div class="page-title-content">
+        <h2>{{title}}</h2>
+        <ul>
+          <li><a href="{% url link  %}">{{crumb_to}}</a></li>
+          {% if subtitle %}
+          <li><a href="{% url prev_link  %}">{{crumb_to_previous}}</a></li>
+            <li>{{subtitle}}</li>
+          {% else %}
+            <li>{{title}}</li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>

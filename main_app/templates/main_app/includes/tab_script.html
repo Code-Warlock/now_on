@@ -1,0 +1,82 @@
+<script>
+    let tabs = document.querySelector('.tabs');
+    let tabcontent = document.querySelector('div.tab_content');
+    tabs.addEventListener('click', (e)=>{
+      e.preventDefault();
+      let items = tabs.querySelectorAll('li')
+      for (let i of items) {
+        i.classList.remove('current');
+      }
+      if(!e.target.classList.contains('current') && e.target.localName=='li' && e.target.classList.contains("CCTV")) {
+        e.target.classList.add('current');
+        tabcontent.innerHTML = `
+        <div id="tab1" class="tabs_item">
+          <p>
+            CCTV System Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobisaperiam est praesentium, quos iste consequuntur omnis
+            <br>
+            CCTV System Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobisaperiam est praesentium, quos iste consequuntur omnis
+          </p>
+          <a class="default-btn" href="about/index.html"
+            >Learn About</a
+          >
+        </div>`
+      }
+      if(!e.target.classList.contains('current') && e.target.localName=='li' && e.target.classList.contains("Access-control")) {
+        e.target.classList.add('current');
+        tabcontent.innerHTML = `
+        <div id="tab1" class="tabs_item">
+          <p>
+            Access-control Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+            <br>
+            Access-control Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+          </p>
+          <a class="default-btn" href="about/index.html"
+            >Learn About</a
+          >
+        </div>`
+      }
+      if(!e.target.classList.contains('current') && e.target.localName=='li' && e.target.classList.contains("Canine")) {
+        e.target.classList.add('current');
+        tabcontent.innerHTML = `
+        <div id="tab1" class="tabs_item">
+          <p>
+            Canine Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+            <br>
+            Canine Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+          </p>
+          <a class="default-btn" href="about/index.html"
+            >Learn About</a
+          >
+        </div>`
+      }
+      if(!e.target.classList.contains('current') && e.target.localName=='li' && e.target.classList.contains("Fire")) {
+        e.target.classList.add('current');
+        tabcontent.innerHTML = `
+        <div id="tab1" class="tabs_item">
+          <p>
+            Fire safety Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+            <br>
+            Fire safety Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+          </p>
+          <a class="default-btn" href="about/index.html"
+            >Learn About</a
+          >
+        </div>`
+      }
+      if(!e.target.classList.contains('current') && e.target.localName=='li' && e.target.classList.contains("Goals")) {
+        e.target.classList.add('current');
+        tabcontent.innerHTML = `
+        <div id="tab1" class="tabs_item">
+          <p>
+            Goals Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+            <br>
+            Goals Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+          </p>
+          <a class="default-btn" href="about/index.html"
+            >Learn About</a
+          >
+        </div>`
+      }
+    });
+  
+  </script>

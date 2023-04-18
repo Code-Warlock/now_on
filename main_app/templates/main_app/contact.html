@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}
+        Now-On - Security Services | {{title}}
+    {% endblock title %}
+    {% block styles %}
+        {% include 'main_app/includes/links.html' %}
+    {% endblock styles %}
+    {% block pre-load-scripts %}
+        {% include 'main_app/includes/scripts.html' %}
+    {% endblock pre-load-scripts %}
+    {% block content %}
+    <div id="__next">
+        {% include 'header.html' %}
+        {% include 'main_app/includes/landing_crumb.html' %}
+  
+    <div class="contact-info-area">
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 p-0">
+            <div class="single-contact-info">
+                <i class="bx bx-location-plus"></i>
+                <h3>Ogun State, Nigeria</h3>
+                <p>Sagamu-Abeokuta Express Road, Ogun State.</p>
+                <a
+                href="mailto:test@gmail.com"
+                >Email:
+                <span
+                    >[email&#160;protected]</span
+                ></a
+                ><a href="tel:+822456974">+822456974</a>
+            </div>
+            </div>
+            <div class="col-lg-3 p-0">
+            <div class="single-contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63383.76246838527!2d3.590713491854793!3d6.832284873349228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bd8d0e0df8253%3A0x61d9c04dd6972c02!2s121102%2C%20Sagamu%2C%20Ogun%20State%2C%20Nigeria!5e0!3m2!1sen!2sbd!4v1681808341682!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+            <div class="col-lg-3 p-0">
+            <div class="single-contact-info">
+                <i class="bx bx-location-plus"></i>
+                <h3>California, US</h3>
+                <p>658 Lane Drive st Riverside. California</p>
+                <a
+                href="mailto:test@example.com"
+                >Email:
+                <span
+                    >[email&#160;protected]</span
+                ></a
+                ><a href="tel:+892-569-756">+892-569-756</a>
+            </div>
+            </div>
+            <div class="col-lg-3 p-0">
+            <div class="single-contact-map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509156.5834578!2d-123.79616103953882!3d37.1931243309143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2sbd!4v1591218371520!5m2!1sen!2sbd"
+                ></iframe>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="faq-contact-area ptb-100">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="contact-wrap">
+                <div class="contact-form">
+                <form>
+                    <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Name"
+                            class="form-control"
+                            required=""
+                            value=""
+                        />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                        <input
+                            type="text"
+                            name="email"
+                            placeholder="Email"
+                            class="form-control"
+                            required=""
+                            value=""
+                        />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                        <input
+                            type="text"
+                            name="number"
+                            placeholder="Phone number"
+                            class="form-control"
+                            required=""
+                            value=""
+                        />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Subject"
+                            class="form-control"
+                            required=""
+                            value=""
+                        />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                        <textarea
+                            name="text"
+                            cols="30"
+                            rows="7"
+                            placeholder="Write your message..."
+                            class="form-control"
+                            required=""
+                        ></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <button type="submit" class="default-btn page-btn">
+                        Send Message
+                        </button>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    {% include 'footer.html' %}
+{% endblock content %}

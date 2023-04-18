@@ -1,0 +1,297 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}
+        Now-On - Security Services | {{title}}
+    {% endblock title %}
+    {% block styles %}
+        {% include 'main_app/includes/links.html' %}
+    {% endblock styles %}
+    {% block pre-load-scripts %}
+        {% include 'main_app/includes/scripts.html' %}
+    {% endblock pre-load-scripts %}
+    {% block content %}
+    <div id="__next">
+        {% include 'header.html' %}
+        {% include 'main_app/includes/landing_crumb.html' %}
+        <section class="team-area ptb-100">
+            <div class="container">
+              <div class="section-title">
+                <h2>Our Expert Team</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incidiunt labore et dolore magna aliqua. Quis ipsum
+                  suspendisse ultrices gravida.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="{% static 'images/bodyguardd.jpg' %}" alt="image" />
+                      {% comment %} <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul> {% endcomment %}
+                    </div>
+                    <div class="content">
+                      <h3>Peter Pers</h3>
+                      <span>Director</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team2.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Sarah Swift</h3>
+                      <span>Executive</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team3.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Alita Scot</h3>
+                      <span>Programmer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team4.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Denial James</h3>
+                      <span>CEO</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team5.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Killv Smith</h3>
+                      <span>Regional Leader</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team6.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Kilva Smith</h3>
+                      <span>Web Deringer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team7.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Zinkel Dew</h3>
+                      <span>Graphics Designer</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <div class="single-team">
+                    <div class="image">
+                      <img src="../img/team/team8.jpg" alt="image" />
+                      <ul class="social">
+                        <li>
+                          <a href="https://facebook.com/" target="_blank"
+                            ><i class="bx bxl-facebook"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://twitter.com/" target="_blank"
+                            ><i class="bx bxl-twitter"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://linkedin.com/" target="_blank"
+                            ><i class="bx bxl-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="https://instagram.com/" target="_blank"
+                            ><i class="bx bxl-instagram"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content">
+                      <h3>Thomas Olsen</h3>
+                      <span>Founder &amp; CEO</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+    {% include 'footer.html' %}
+    {% endblock content %}

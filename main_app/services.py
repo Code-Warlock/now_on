@@ -118,10 +118,7 @@ _services = [
 ]
 
 tabs = {
-  "CCTV System" : "CCTV System Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobisaperiam est praesentium, quos iste consequuntur omnis",
-  "Canine Services" : "Canine Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis",
   "Access-control" : "Access-control Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis",
-  "Fire safety" : "Fire safety Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis",
   "Goals" : "Goals Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis",
   
 }

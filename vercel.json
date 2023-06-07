@@ -1,7 +1,7 @@
 {
     "builds": [
       {
-        "src": "django_app_name/wsgi.py",
+        "src": "now_on/wsgi.py",
         "use": "@vercel/python"
       }
     ],

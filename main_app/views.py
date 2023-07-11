@@ -1,7 +1,7 @@
 from django.shortcuts import HttpResponse, HttpResponseRedirect, render
 from django.urls import reverse
 
-from .services import _services
+from .services import _services,sp_services
 from .services import tabs
 from random import randrange
 
@@ -90,7 +90,7 @@ def services(request):
 
 def service(request,slug):
     all_services = _services
-    services_length = len(all_services)
+    services_length = len(all_services)    
     
     def generate_threes():
         start = randrange(0, services_length)
@@ -100,7 +100,8 @@ def service(request,slug):
         else:
             return start,end 
     single_service = next(service for service in _services if service['slug'] == slug)
-    three_items = [all_services[item] for item in range(generate_threes()[0],generate_threes()[1])]
+    range_val = generate_threes()
+    three_items = [all_services[item] for item in range(range_val[0],range_val[-1])]
     context = {
         "services": three_items,
         "title" : "Service",
@@ -114,6 +115,22 @@ def service(request,slug):
     }
     print(single_service['image'])
     return render(request , 'main_app/service.html',context)
+
+def sp_service(request,slug):
+    specials = sp_services
+    single_special = next(special for special in specials if special['slug'] == slug)
+    context = {
+        "title" : "Service",
+        "subtitle": single_special['title'],
+        "crumb_to" : "Home",
+        "crumb_to_previous": "Services",
+        "prev_link": "services",
+        "link" : "index",
+        "service" : single_special,
+        "options" : single_special['options'],
+        "thumbnail" : "services/" + single_special['image'] 
+    }
+    return render(request, 'main_app/sp_services.html',context)
 
 def gallery(request):
     context = {

@@ -211,7 +211,7 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolorer
                 </p>
-                <a class="read-more" href="service-details/index.html"
+                <a class="read-more" href="{% url 'services-special' 'secured-managed-it' %}#bookmark-secure"
                   >Read More</a
                 >
               </div>
@@ -252,65 +252,7 @@
         </div>
       </div>
     </section>
-    {% comment %} {% include 'main_app/includes/mini_about.html' %} {% endcomment %}
-    
-    {% comment %} <section class="cybersecurity-area ptb-100">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="cybersecurity-content">
-              <h2>24/7 Electronic Technology and ICT in Integrated Security Systems</h2>
-              <p>
-                With the integration of advanced technology and technical know how, NOW-ON offers services to revolutionize your security system,personalised to your taste.
-              </p>
-              <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                  <ul class="cybersecurity-item">
-                    <li>
-                      <i class="bx bx-check"></i>CCTV Systems
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Security Alarms
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Fire safety Gadgets
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Computer Integration
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Electronic Locks
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                  <ul>
-                    <li>
-                      <i class="bx bx-check"></i>Electronic Doors
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Infrared illumination
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Day/night video technology
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Electronic Safes
-                    </li>
-                    <li>
-                      <i class="bx bx-check"></i>Mobile connectivity for remote detection
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 pr-0">
-            <div class="cybersecurity-img"></div>
-          </div>
-        </div>
-      </div>
-    </section> {% endcomment %}
+    {% include 'main_app/includes/mini_about.html' %}
     {% comment %} <section class="blog-area pb-70"> 
       <div class="container">
         <div class="section-title">

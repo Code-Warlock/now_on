@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}
+        Now-On - Security Services | {{title}}
+    {% endblock title %}
+    {% block styles %}
+        {% include 'main_app/includes/links.html' %}
+    {% endblock styles %}
+    {% block pre-load-scripts %}
+        {% include 'main_app/includes/scripts.html' %}
+    {% endblock pre-load-scripts %}
+    {% block content %}
+    <div id="__next">
+        {% include 'header.html' %}
+        {% include 'main_app/includes/landing_crumb.html' %}
+
+          <section class="features-area-page pt-100 pb-70">
+            
+          </section>
+          <section class="performance-area bg-none pb-100">
+            <div class="container">
+              <div class="section-title">
+                <h2>{{service.title}}</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus quam neque quibusdam corrupti aspernatur corporis alias
+                  nisi dolorum expedita veritatis voluptates minima.
+                </p>
+              </div>
+              <div class="row">
+                {% for option in options %}
+                {% if option.slug == "order" %}
+                <div class="col-lg-4 col-sm-6" onclick="window.location.href= '{% url 'contact' %}' " style='cursor:pointer'>
+                    <div class="single-security">
+                      <i class="flaticon-website"></i>
+                      <h3>{{option.title}}</h3>
+                      <p>
+                        {{option.excerpt}}
+                      </p>
+                      {% comment %} <a class="read-more" href="{% url 'services' service.slug %}"
+                        >Read More</a
+                      > {% endcomment %}
+                      <img src="{% static 'img/shape/shape4.png' %}" alt="Image" />
+                    </div>
+                  </div>
+                {% else %}
+                <div class="col-lg-4 col-sm-6" onclick="window.location.href= '{% url 'services-detail' option.slug %}' " style='cursor:pointer'>
+                  <div class="single-security">
+                    <i class="flaticon-website"></i>
+                    <h3>{{option.title}}</h3>
+                    <p>
+                      {{option.excerpt}}
+                    </p>
+                    {% comment %} <a class="read-more" href="{% url 'services' service.slug %}"
+                      >Read More</a
+                    > {% endcomment %}
+                    <img src="{% static 'img/shape/shape4.png' %}" alt="Image" />
+                  </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+               
+              </div>
+            </div>
+          </section>
+        {% include 'footer.html' %}
+    {% endblock content %}

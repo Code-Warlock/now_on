@@ -144,3 +144,10 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+# Vercel and Tests
+.vercel
+vercel.*
+test.*
+
+# Content and Docs
+/content

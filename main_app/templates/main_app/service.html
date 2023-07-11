@@ -24,7 +24,7 @@
               <h3>
                 {{service.title}}
               </h3>
-              <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt</p>
+              <p style="width:80%">{{service.excerpt}}</p>
               <div class="article-image">
                 <img
                   src="{% static 'images/'|add:thumbnail %}"
@@ -37,15 +37,6 @@
                 incidunt ut labore et dolore magnam dolor sit, consectetur
                 qui ratione voluptatem sequi.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in sed quia non
-                numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat labore et dolore magna aliqua.
-              </p>
               <blockquote class="flaticon-quote">
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -55,32 +46,8 @@
                   praesentium eveniet illum asperiores.
                 </p>
               </blockquote>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in sed quia non
-                numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in sed quia non numquam eius modi tempora
-                incidunt ut labore et dolore magnam aliquam quaerat
-                consectetur adipisicing Lorem ipsum dolor sit amet numquam.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in sed quia non
-                numquam eius modi tempora incidunt ut labore et dolore
-                magnam aliquam quaerat ullamco laboris nisi ut aliquip ex
-                ea.
-              </p>
+             
+             
             </div>
             {% comment %} <div class="article-footer">
               <div class="article-tags">
@@ -121,6 +88,7 @@
                 <h3 class="widget-title">Other Services</h3>
                 <div class="post-wrap">
                 {% for service in services  %}
+                {% comment %} {% with access as  %}{% endwith %} {% endcomment %}
                   <div class="item">
                     <a class="thumb" href="{% url 'services-detail' service.slug %}"
                       ><span class="fullimage cover bg1" role="img" style="background-image:url({% static 'images/services/'|add:service.image %})"></span
@@ -144,6 +112,63 @@
           </div>
         </div>
       </div>
+      <section class="cybersecurity-area ptb-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="cybersecurity-content">
+                <h2>24/7 Electronic Technology and ICT in Integrated Security Systems</h2>
+                <p>
+                  With the integration of advanced technology and technical know how, NOW-ON offers services to revolutionize your security system,personalised to your taste.
+                </p>
+                <div class="row">
+                  <div class="col-lg-6 col-sm-6">
+                    <ul class="cybersecurity-item">
+                      <li>
+                        <i class="bx bx-check"></i>CCTV Systems
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Security Alarms
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Fire safety Gadgets
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Computer Integration
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Electronic Locks
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                    <ul>
+                      <li>
+                        <i class="bx bx-check"></i>Electronic Doors
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Infrared illumination
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Day/night video technology
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Electronic Safes
+                      </li>
+                      <li>
+                        <i class="bx bx-check"></i>Mobile connectivity for remote detection
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pr-0">
+              <div class="cybersecurity-img"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
   {% include 'footer.html' %}

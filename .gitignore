@@ -146,7 +146,7 @@ GitHub.sublime-settings
 .history
 # Vercel and Tests
 .vercel
-
+vercel.*
 test.*
 
 # Content and Docs

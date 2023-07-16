@@ -24,7 +24,7 @@
               <h3>
                 {{service.title}}
               </h3>
-              <p style="width:80%">{{service.excerpt}}</p>
+              <p style="width:80%">{{service_content.0}}</p>
               <div class="article-image">
                 <img
                   src="{% static 'images/'|add:thumbnail %}"
@@ -32,21 +32,16 @@
                 />
               </div>
               <p>
-                Quuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt. Neque porro quia non numquam eius modi tempora
-                incidunt ut labore et dolore magnam dolor sit, consectetur
-                qui ratione voluptatem sequi.
+                {% with service_content as items %}
+                      {{ items.1}}
+                
               </p>
               <blockquote class="flaticon-quote">
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellendus aliquid praesentium eveniet illum asperiores,
-                  quidem, ipsum voluptatum numquam ducimus nisi
-                  exercitationem dolorum facilis Repellendus aliquid
-                  praesentium eveniet illum asperiores.
+                  {{items|last}}
                 </p>
               </blockquote>
-             
+             {% endwith %}
              
             </div>
             {% comment %} <div class="article-footer">
@@ -100,7 +95,7 @@
                         >
                       </h4>
                       <a href="{% url 'services-detail' service.slug %}" style="color:black"> 
-                        <i>{% lorem 5 w random %}</i>
+                        <i>{{ service.excerpt|truncatewords:5}}</i>
                       </a>
                     </div>
                     <div class="clear"></div>

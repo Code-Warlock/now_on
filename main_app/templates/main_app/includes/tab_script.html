@@ -16,7 +16,7 @@
             <br>
             CCTV System Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobisaperiam est praesentium, quos iste consequuntur omnis
           </p>
-          <a class="default-btn" href="about/index.html"
+          <a class="default-btn" href="{% url 'about' %}"
             >Learn About</a
           >
         </div>`
@@ -26,13 +26,13 @@
         tabcontent.innerHTML = `
         <div id="tab1" class="tabs_item">
           <p>
-            Access-control Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
-            <br>
-            Access-control Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
-          </p>
-          <a class="default-btn" href="about/index.html"
-            >Learn Access</a
-          >
+                      Implementing security monitoring tools and systems to detect and respond to security incidents in real-time. This involves monitoring system logs, network traffic, and user activities to identify potential threats
+                      <br>
+                      Regular security audits should also be conducted to assess the effectiveness of security controls and identify areas for improvement.
+                    </p>
+                    <a class="default-btn" href="{% url 'about' %}"
+                      >Learn More</a
+                    >
         </div>`
       }
       if(!e.target.classList.contains('current') && e.target.localName=='li' && e.target.classList.contains("Canine")) {
@@ -44,7 +44,7 @@
             <br>
             Canine Services Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
           </p>
-          <a class="default-btn" href="about/index.html"
+          <a class="default-btn" href="{% url 'about' %}"
             >Learn About</a
           >
         </div>`
@@ -58,7 +58,7 @@
             <br>
             Fire safety Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
           </p>
-          <a class="default-btn" href="about/index.html"
+          <a class="default-btn" href="{% url 'about' %}"
             >Learn About</a
           >
         </div>`
@@ -68,12 +68,13 @@
         tabcontent.innerHTML = `
         <div id="tab1" class="tabs_item">
           <p>
-            Goals Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+            Now-on Security Services Limited is on a mission to actively combat the increasing rise in criminal activities.
+            Combine technology and processes to create a secure IT environemt and protect valuable cyber information and assets
             <br>
-            Goals Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis aperiam est praesentium, quos iste consequuntur omnis
+            Ensure a safe environment for everyone by enstablishing a trusted and lasting security presence
           </p>
-          <a class="default-btn" href="about/index.html"
-            >Learn Goals</a
+          <a class="default-btn" href="{% url 'about' %}"
+            >Learn More</a
           >
         </div>`
       }

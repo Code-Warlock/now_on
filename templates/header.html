@@ -47,7 +47,7 @@
                 <span>mail@nowonsecurityltd.com</span>
               </a>
             </li>
-            <li>
+            <li onclick="window.location.href='{% url 'contact' %}#maps'" style="cursor:pointer;">
               <i class="bx bx-location-plus"></i>Sagamu-Abeokuta Express Road,
               Ogun State.
             </li>
@@ -59,13 +59,13 @@
               <a href="#" target="_blank"><i class="bx bxl-facebook"></i></a>
             </li>
             <li>
-              <a href="#" target="_blank"><i class="bx bxl-twitter"></i></a>
+              <a href="https://twitter.com/NowonSSLTD?s=20" target="_blank"><i class="bx bxl-twitter"></i></a>
             </li>
             <li>
               <a href="#" target="_blank"><i class="bx bxl-linkedin"></i></a>
             </li>
             <li>
-              <a href="#" target="_blank"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.instagram.com/nowonsecurityservicesltd/" target="_blank"><i class="bx bxl-instagram"></i></a>
             </li>
           </ul>
         </div>
@@ -79,7 +79,7 @@
           <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="{% url 'index' %}"
               ><img
-                src="{% static 'images/now_on_new2.jpg' %}"
+                src="{% static 'images/main_logo.jpg' %}"
                 style="
                   width: 150px;
                   height: 150px;
@@ -105,12 +105,12 @@
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'about-more' 'team' %}">Our Team</a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                       <a class="nav-link" href="{% url 'about-more' 'faq' %}">FAQ</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'about-more' 'testimonials' %}">Testimonials</a>
-                    </li>
+                    </li> {% endcomment %}
                   </ul>
                 </li>
                 

@@ -111,6 +111,7 @@ def service(request,slug):
         "prev_link": "services",
         "link" : "index",
         "service" : single_service,
+        "service_content" : single_service["content"].split("\n"),
         "thumbnail" : "services/" + single_service['image'] 
     }
     print(single_service['image'])

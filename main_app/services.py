@@ -85,11 +85,7 @@ sp_services = [
             "title": "Access Control Services",
             "image" : random.choice(["access_control","access_control2"]) + ".jpg",
             "content": """
-              Implementing strong access control mechanisms to ensure that only authorized individuals have access to sensitive systems and data. This involves using techniques like user authentication, role-based access control (RBAC), and multi-factor authentication (MFA) to verify user identities and restrict access privileges.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-              aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-              velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-              aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-              velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.
+              Implementing strong access control mechanisms to ensure that only authorized individuals have access to sensitive systems and data. This involves using techniques like user authentication, role-based access control (RBAC), and multi-factor authentication (MFA) to verify user identities and restrict access privileges.
             """
         },
         {
@@ -99,8 +95,6 @@ sp_services = [
         "image" : random.choice(["consultation", "consultation2"]) + ".jpg",
         "content": """
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
-          aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
-          velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
           aperiam est praesentium, quos iste consequuntur omnis exercitationem quam
           velit labore vero culpa ad mollitia? Quis architecto ipsam nemo. Odio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis
           aperiam est praesentium, quos iste consequuntur omnis exercitationem quam

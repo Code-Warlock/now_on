@@ -18168,7 +18168,7 @@ textarea.form-control {
 }
 .banner-area.banner-item-bg-1 {
   background-color: #333;
-  background-image: url(../images/security-guard-protecting-client.jpg);
+  background-image: url(../images/security_guard_protecting_client.jpg);
   background-blend-mode: multiply;
 }
 .banner-area .banner-text {
@@ -18240,7 +18240,7 @@ textarea.form-control {
 }
 .banner-area.banner-area-three {
   background-color: #222;
-  background-image: url(../images/security-guard-protecting-client.jpg);
+  background-image: url(../images/security_guard_protecting_client.jpg);
   background-blend-mode: multiply;
   height: 850px;
   padding: 0;

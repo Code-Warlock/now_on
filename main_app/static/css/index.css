@@ -19902,7 +19902,7 @@ textarea.form-control {
   height: 100%;
   z-index: -1;
   background-color: #000e;
-  background-image: url(../img/page-banner-bg.png), url(../images/now_on_927x909.JPG);
+  background-image: url(../images/now_on_927x909.JPG), url(../img/page-banner-bg.png);
   background-position: 50%,50%;
   background-repeat: no-repeat;
   background-size: cover;

@@ -112,7 +112,7 @@ def service(request,slug):
         "link" : "index",
         "service" : single_service,
         "service_content" : single_service["content"].split("\n"),
-        "thumbnail" : "services/" + single_service['image'] 
+        "thumbnail" : "services/" + single_service['image']
     }
     print(single_service['image'])
     return render(request , 'main_app/service.html',context)

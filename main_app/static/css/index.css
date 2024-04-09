@@ -18240,7 +18240,7 @@ textarea.form-control {
 }
 .banner-area.banner-area-three {
   background-color: #222;
-  background-image: url(../images/now_on_927x909.JPG);
+  background-image: url(../g2.jpg);
   background-blend-mode: multiply;
   height: 850px;
   padding: 0;
@@ -19331,7 +19331,7 @@ textarea.form-control {
   color: #ED7426;
 }
 .footer-top-area {
-  background-image: url(../images/now_on_927x909.JPG);
+  background-image: url(../images/g1.png);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19902,7 +19902,7 @@ textarea.form-control {
   height: 100%;
   z-index: -1;
   background-color: #000e;
-  background-image: url(../img/page-banner-bg.png), url(../images/now_on_927x909.JPG);
+  background-image: url(../img/page-banner-bg.png), url(../images/g1.png);
   background-position: 50%,50%;
   background-repeat: no-repeat;
   background-size: cover;

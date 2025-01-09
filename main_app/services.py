@@ -25,7 +25,7 @@ _services = [
         "slug": "vip-services",
         "excerpt": "Premium security service designed exclusively for VIPs, ensuring utmost protection, confidentiality, and peace of mind.",
        "title": "VIP Services",
-        "image" : random.choice(["canine_security","canine_security2","canine_security3"]) + ".jpg",
+        "image" : random.choice(["canine_security","canine_security2","officers_backview"]) + ".jpg",
         "content": """Welcome to NOWON's VIP Security Service, where your safety and peace of mind are our top priorities. Our specialized VIP security team is dedicated to providing exceptional protection and tailored security solutions for high-profile individuals, executives, celebrities, and VIPs.
         We understand that every VIP has unique security requirements. Our VIP security service begins with a comprehensive security assessment to identify potential threats, vulnerabilities, and specific security needs. This assessment allows us to develop a personalized security plan that meets your individual requirements.
         We understand the importance of maintaining your privacy and confidentiality. Our VIP security team operates with the utmost discretion, ensuring that your personal and sensitive information remains secure. We adhere to strict confidentiality protocols to protect your privacy at all times.
@@ -54,7 +54,7 @@ _services = [
         "slug": "training-services",
         "excerpt": "Specialized training for security personnel to enhance their skills, knowledge, and preparedness for optimal protection and risk mitigation.",
         "title": "Training Services",
-        "image" : random.choice(["training","training2"]) + ".jpg",
+        "image" : random.choice(["standing_officers","standing_officers"]) + ".jpg",
         "content": """At NOWON, we prioritize the safety and security of our clients. To ensure that we deliver the highest level of professional service, we have established a comprehensive Training and Personnel Training Security Service. This service is designed to equip our security personnel with the necessary skills, knowledge, and expertise to handle various security challenges effectively. With a strong focus on continuous learning and development, we are dedicated to maintaining a highly trained and competent security 
         We encourage our security team to pursue continuous professional development to enhance their skills and stay updated with industry advancements Opportunities for certifications, workshops, seminars, and industry conferences are provided to further expand their knowledge base. By investing in the growth and development of our personnel, we ensure that they remain at the forefront of the security industry.
         Our rigorous training programs ensure that our security personnel possess the necessary skills and knowledge to handle security challenges effectively. They are equipped to assess risks, respond to emergencies, and maintain a safe and secure environment for our clients.

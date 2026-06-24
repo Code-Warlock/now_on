@@ -146,7 +146,7 @@
         <div class="col-lg-6">
           <div class="copy-right">
             <p>
-              Copyright ©2025
+              Copyright &copy;<span id="year">  </span>
               CodeWarlock. Designed by
               <a href="https://github.com/Code-Warlock" target="blank"
                 >CodeWarlock</a
@@ -171,3 +171,7 @@
       </div>
     </div>
   </footer>
+
+  <script>
+     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
